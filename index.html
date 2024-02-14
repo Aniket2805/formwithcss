@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <form class="form" method="post" action="mailto: geeksforgeeks@gmail.com">
+        <h1>Student Details</h1>
+        <p>Salutation</p>
+        <select id="job" name="user_job">
+          <option value=" ">Mr.</option>
+          <option value=" ">Mrs.</option>
+          <option value=" ">Ms.</option>
+        </select>
+        <p>Full name</p>
+        <input type="text" pattern="[a-zA-Z]" required />
+        <p>E-mail</p>
+        <input type="email" required />
+        <p>Gender :</p>
+        <div style="display: flex">
+          <div style="margin-right: 20px">
+            <input
+              type="radio"
+              id="under_13"
+              value="under_13"
+              name="user_age"
+            /><label for="under_13" class="light">Male</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="over_13"
+              value="over_13"
+              name="user_age"
+            /><label for="over_13" class="light">Female</label>
+          </div>
+        </div>
+        <p>Address</p>
+        <input type="text" required />
+        <p>Phone</p>
+        <input type="tel" required pattern="[0-9]{10}" />
+        <p>DOB</p>
+        <input type="date" required />
+        <button type="submit" class="mt-2">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
