@@ -2,10 +2,10 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .main {
-  height: 95vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: auto 0;
+  padding: 40px 0px;
 }
 h1 {
   color: black;
@@ -15,11 +15,19 @@ h1 {
 .form {
   background-color: rgba(188, 187, 188, 0.307);
   border-radius: 10px;
+  min-width: 26vw;
   padding: 40px;
   border: 2px;
-  width: 20vw;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 400px) {
+  .form {
+    padding: 30px;
+  }
+  .form h1 {
+    font-size: 24px;
+  }
 }
 p {
   color: rgba(0, 0, 0, 0.852);
